@@ -1,0 +1,294 @@
+/*media settings*/
+
+@media (orientation: portrait){
+
+    .header-div > #logoDiv {
+        width: 30%;
+    }
+    
+    .header-div > #logoDiv > a > img {
+        width: 40vmin;
+    }
+    .header-div > #divAboveNav {
+        padding-left: 1vmin;
+        width: 70%;
+    }
+    .header-div > #divAboveNav > img {
+        max-width: 80%;
+    }
+
+    .middle-div > #divLeftNav {
+        display: none;
+    }
+    .middle-div > #nav {
+        display: flex;
+        margin: 0px;
+        width: 90%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 0 5vmin;
+    }
+    .middle-div > #nav .button-menu {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        }
+    
+    .middle-div > #nav .button-menu input[type=submit] {
+        padding: 0 1vmin;
+        width: 22vmin;
+        height: 95%;
+        }
+    #bottom-div-data > .standard-2-field-input * {
+        font-size: 4.0vmin;
+    }
+    #bottom-div-data > .standard-2-field-input td input {
+        width: 25%;
+
+    } 
+    #bottom-div-data > .standard-2-field-input td input[type=submit]{
+        width: 40%;
+    } 
+    
+}
+
+/*end of media settings */
+
+/* HeaderDiv */
+
+.header-div {
+display: flex;
+width: 100vw;
+height: 20vh;
+}
+
+/* LogoDiv */
+
+#logoDiv {
+width: 20vw;
+height: 20vh;
+display: flex;
+justify-content: center;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+a img {
+margin-left: 5vmin;
+max-width: 35vh;
+max-height: 20vh;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+
+/*end of LogoDiv*/
+
+/* DivAboveNav */
+
+#divAboveNav {
+border-radius: 11px;
+width: 80vw;
+height: 20vh;
+display: flex;
+justify-content: stretch;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+#divAboveNav > img {
+margin-left: 5vmin;
+max-width: 75vh;
+max-height: 20vh;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+/*end of DivAboveNav*/
+
+/*end of HeaderDiv */
+
+
+/* MiddleDiv */
+
+.middle-div {
+display: flex;
+width: 100vw;
+height: 10vh;
+}
+
+/* DivLeftNav */
+
+#divLeftNav {
+border-radius: 10px 0px 0px 10px;
+width: 20vw;
+height: 10vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #B95B5B;
+font-size: 4.0vmin;
+opacity: 0.8;
+}
+
+
+/* Nav menu */
+
+#nav {
+border-radius: 0px 10px 10px 0px;
+margin-right: 2.5vmin;
+width: 80vw;
+height: 10vh;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+background: #B95B5B;
+
+/**/
+opacity: 0.8;
+}
+
+#nav > div {
+display: flex;
+justify-content: center;
+height: 8vh;
+width: 100%;
+}
+
+#nav > div input[type=submit]{
+    width: 18.5vw;
+}
+
+#nav input:hover {
+color: red;
+background: #632839;
+border: 1px solid black;
+}
+
+/*end of nav menu*/
+
+/*end of MiddleDiv*/
+
+/* BottomDiv */
+
+.bottom-div {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100vw;
+height: 70vh;
+}
+
+.bottom-div > #divAbout {
+	margin: 0px 50px;
+	border: 2px solid red;
+}
+
+
+
+/* for all submit buttons */
+
+input[type=submit] {
+display: inline;
+border-radius: 11px;
+text-align: center;
+height: 8vh;
+width: 15vw;
+background: #9A405B;
+border: none;
+font-family: Roboto;
+font-style: italic;
+font-weight: normal;
+font-size: 4.25vmin;
+color: #000000;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+/* standard 2-input field table with button */
+
+.table-button-long input[type=submit] {
+width: 50%;
+}
+
+.table-button-long input[type=submit]:hover {
+color: red;
+background: #632839;
+border: 1px solid black;
+}
+
+.table-input-fields {
+font-size: 4.0vmin;
+}
+
+.table-input-fields input[type=text] {
+border: 0.75vmin solid #B95B5B;
+border-radius: 11px;
+height: 8vh;
+width: 22vw;
+font-size: 4.0vmin;
+}
+
+/*password field*/
+
+.table-input-fields input[type=password] {
+border: 0.75vmin solid #B95B5B;
+border-radius: 11px;
+height: 8vh;
+width: 15vw;
+font-size: 4.0vmin;
+}
+
+.feedback-field {
+margin: 0 5vmin;
+font-size: 4.0vmin;
+}
+
+td {
+text-align: center;
+}
+
+/*about page only */
+
+.middle-div-about-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.middle-div-about-page > #divLeftNav {
+   display: none;
+}
+.middle-div-about-page > #nav.about {
+	width: 99%;
+	border-radius: 10px;
+}
+.middle-div-about-page > #nav.about > .button-menu {
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.bottom-div-about-page {
+display: flex;
+justify-content: center;
+width: 100vw;
+text-align: justify;
+font-size: 3.0vmin;
+}
+
+.about-page-heading {
+display: flex;
+justify-content: center;
+width: 75vw;
+height: 10vh;
+}
+
+.about-page-text {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 75vw;
+}
+
+/*end of "about page" styles */
+
+

@@ -1,0 +1,247 @@
+/*@media settings*/
+
+@media (orientation: portrait) {
+    .header-div > #logoDiv {
+        width: 30%;
+    }
+    
+    .header-div > #logoDiv > a > img {
+        width: 40vmin;
+    }
+    .header-div > #divAboveNav {
+        padding-left: 1vmin;
+        width: 70%;
+    }
+    .header-div > #divAboveNav > img {
+        max-width: 80%;
+    }
+    body .middle-div {
+        display: block;
+       
+    }
+    body .middle-div > #nav {
+        display: none;
+    }
+    .middle-div > #divLeftNav {
+        width: 95%;
+        border-radius: 10px;
+        text-align: center;
+    }
+    body > .bottom-div {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        }
+    .bottom-div > .table-div {
+        width: 95vw;
+    }
+    .bottom-div #specTable {
+     width: 100%;  
+    }
+    tr #timeValueField {
+      width: 50vmin;
+    }
+    tr .timeItem {
+        width: 7%;
+    }
+    tr .statusItem {
+        width: 20%;
+    }
+    tr .no-border {
+        border: none;
+    }
+    tr .codeItem {
+        width: 12%;
+    }
+    tr .btnCell {
+        width: 22%;
+        border-left: 2px solid #AFAFAF;
+    }
+    tr .btnCell input[type=submit] {
+    width: 98%;
+    font-size: 3.0vmin;
+    }
+}
+
+/*end of media settings*/
+
+/* HeaderDiv */
+
+.header-div {
+display: flex;
+width: 100vw;
+height: 20vh;
+}
+
+/* LogoDiv */
+
+#logoDiv {
+border-radius: 11px;
+width: 20vw;
+height: 20vh;
+display: flex;
+justify-content: center;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+a img {
+margin-left: 5vmin;
+max-width: 35vh;
+max-height: 20vh;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+
+/*end of LogoDiv*/
+
+/* DivAboveNav */
+
+#divAboveNav {
+border-radius: 11px;
+width: 80vw;
+height: 20vh;
+display: flex;
+justify-content: stretch;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+#divAboveNav > img {
+margin-left: 5vmin;
+max-width: 75vh;
+max-height: 20vh;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+/*end of DivAboveNav*/
+
+/*end of HeaderDiv */
+
+
+/* MiddleDiv */
+
+.middle-div {
+display: flex;
+width: 100vw;
+height: 5vh;
+}
+
+/* DivLeftNav */
+
+#divLeftNav {
+width: 100%;
+border-radius: 10px;
+text-align: center; 
+height: 5vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #B95B5B;
+font-size: 4.0vmin;
+opacity: 0.8;
+}
+
+
+/* Fake Nav menu */
+
+#nav {
+display: none;
+}
+
+/*end of nav menu*/
+
+/*end of MiddleDiv*/
+
+/* BottomDiv */
+
+.bottom-div {
+display: flex;
+align-items: flex-start;
+justify-content: center;
+width: 100%;
+height: 100%;
+}
+
+.table-div {
+border-radius: 12px;
+border: 1vh solid #B95B5B;
+width: 80%;
+}
+/* for all submit buttons */
+
+.btnCell input[type=submit] {
+display: inline;
+border-radius: 11px;
+border: 0.25vh solid black;
+text-align: center;
+height: 5vh;
+width: 12vw;
+background: #9A405B;
+font-family: Roboto;
+font-style: italic;
+font-weight: normal;
+font-size: 3.0vmin;
+color: #000000;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+input[type=submit]:hover {
+color: red;
+background: #632839;
+border: 0.25vmin solid #B95B5B;
+}
+
+#specTable {
+border-collapse: separate; text-align: center;
+border-radius: 5px;
+height: 75vh; width: 100%; 
+background: #C4C4C4;
+text-align: center;
+}
+
+#specTable th {
+height: 6vh;
+width: 10;
+background: #B04141;
+border-radius: 5px;
+font-size: 3vmin;
+border: 0.75vh solid #9A405B;
+}
+
+#specTable td {
+height: 4.25vh;
+}
+
+.timeItem {
+width: 8vw;
+}
+
+.statusItem {
+border-left: 1px solid hsla(0, 0%, 80%, 1);
+border-right: 1px solid hsla(0, 0%, 80%, 1);
+width: 12vw;
+}
+
+.statusItem:hover {
+background-color: #B95B5B !important; /*otherwise less specific than JS and won't hover upon selection*/
+opacity: 0.9;
+} 
+
+.codeItem {
+width: 8vw;
+}
+
+.btnCell {
+width: 12vw;
+}
+
+.btnCell input[type=submit]{
+    width: 98%;
+}
+
+input[type=date] {
+    background-color: #C4C4C4;
+}
+input[type=date]:hover {
+    background-color: #DDD;
+}

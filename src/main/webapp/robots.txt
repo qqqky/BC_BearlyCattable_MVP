@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /login_page.html
+Disallow: /management_page.html

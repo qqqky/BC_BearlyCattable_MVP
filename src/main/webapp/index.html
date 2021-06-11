@@ -1,0 +1,19 @@
+<!-- index helper - calls servlet before accessing main page-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>BC entry</title>
+
+<style>
+       body {background: url("background10.svg") no-repeat center center fixed; background-size: cover; overflow-x: hidden }
+</style>
+</head>
+<body onload="document.Entry.submit()">
+
+<form name="Entry" method="get" action="EntryPoint"> <input type="hidden" value="entry" /> </form>
+<a href="EntryPoint">If you haven't already been redirected - click this link to enter BearlyCattable</a>
+
+</body>
+</html>
